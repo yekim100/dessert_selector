@@ -1,0 +1,45 @@
+.select_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.select_column {
+  margin-bottom: 25px;
+}
+
+.select_column input[type="radio"] {
+  display: none;
+}
+
+.select_column span {
+  font-size: 20px;
+}
+
+.select_column input[type="radio"] + span {
+  cursor: pointer;
+}
+
+.select_box input[type="radio"]:checked + span {
+  color: #c72d1b;
+}
+
+#next_btn {
+  position: absolute;
+  font-size: 25px;
+  bottom: 20%;
+  right: 20%;
+  color: #c72d1b;
+  text-decoration: none;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 10%;
+  background: transparent;
+}
+
+#next_btn:hover {
+  cursor: pointer;
+  font-weight: 600;
+}

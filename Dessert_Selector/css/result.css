@@ -1,0 +1,26 @@
+.result_try:last-child {
+  bottom: 10%;
+}
+
+.result_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#result_food {
+  font-size: 50px;
+  margin-top: 10%;
+}
+
+#food_search {
+  margin-top: 10%;
+  font-size: 15px;
+}
+
+#food_search:hover {
+  color: red;
+  cursor: pointer;
+}

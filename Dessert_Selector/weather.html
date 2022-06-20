@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z0MJQQ85JM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Z0MJQQ85JM");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>밥밥밥 밥 뭐먹지?</title>
+    <meta
+      name="description"
+      content="오늘 뭐먹지? 점심 뭐먹지? 저녁 뭐먹지? 랜덤 식사메뉴 선택 도구"
+    />
+    <meta
+      name="keywords"
+      content="랜덤메뉴, 랜덤메뉴 셀렉터, 밥밥밥, 메뉴추천, 메뉴선택, 랜덤메뉴추천, 메뉴룰렛, 점심추천, 저녁추천, 점심메뉴, 저녁메뉴, 오늘 뭐먹지?, 점심 뭐먹지?, 저녁 뭐먹지?"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/313/cooked-rice_1f35a.png"
+    />
+    <meta name="NaverBot" content="All" />
+    <meta name="NaverBot" content="index,follow" />
+    <meta name="Yeti" content="All" />
+    <meta name="Yeti" content="index,follow" />
+  </head>
+  <body>
+    <header>
+      <!--상단광고-->
+
+      <span class="name">오늘 뭐먹지?</span>
+    </header>
+
+    <main>
+      <!--좌측광고-->
+
+      <!--메인 컨텐츠-->
+      <div class="main_box">
+        <span class="main_title">현재 배부름 상태는?</span>
+
+        <!-- 선택지   -->
+        <form class="select_box" id="w_form" action="feel.html">
+          <label class="select_column">
+            <input
+              id="select_list"
+              type="radio"
+              name="chk_w"
+              value="W_HOT"
+              onclick="getList(event)"
+              required
+            />
+            <span>배 터질것 같음</span>
+          </label>
+          <label class="select_column">
+            <input
+              id="select_list"
+              type="radio"
+              name="chk_w"
+              value="W_COLD"
+              onclick="getList(event)"
+            />
+            <span>적당히 배부르지만 뭔가 아쉬움</span>
+          </label>
+          <label class="select_column">
+            <input
+              id="select_list"
+              type="radio"
+              name="chk_w"
+              value="W_WET"
+              onclick="getList(event)"
+            />
+            <span>밥은 먹었으나 간에 기별도 안옴</span>
+          </label>
+
+          <!-- <label class="select_column">
+            <input
+              id="select_list"
+              type="radio"
+              name="chk_w"
+              value="W_GOOD"
+              onclick="getList(event)"
+            />
+            <span>짱좋다</span>
+          </label> -->
+
+          <!--클릭시 feel.html-->
+          <input type="submit" value="NEXT" id="next_btn" />
+        </form>
+      </div>
+
+      <!--우측광고-->
+    </main>
+
+    <div class="share_box">
+      <span>공유하기</span>
+      <div class="share_column">
+        <a
+          id="btnTwitter"
+          class="link-icon twitter"
+          href="javascript:shareTwitter();"
+          >트위터</a
+        >
+        <a
+          id="btnFacebook"
+          class="link-icon facebook"
+          href="javascript:shareFacebook();"
+          >페이스북</a
+        >
+        <a id="btnKakao" class="link-icon kakao" href="javascript:shareKakao();"
+          >카카오톡</a
+        >
+      </div>
+    </div>
+
+    <!--하단광고-->
+    <div class="ad_topbottom">
+      <ins
+        class="kakao_ad_area"
+        style="display: none"
+        data-ad-unit="DAN-uYDTICe0W4BF29DA"
+        data-ad-width="728"
+        data-ad-height="90"
+      ></ins>
+    </div>
+
+    <script src="js/weather.js"></script>
+    <script src="js/app.js"></script>
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
+    <!--카카오 공유 스크립트-->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  </body>
+</html>
